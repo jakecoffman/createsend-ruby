@@ -1,6 +1,3 @@
-require 'bundler'
-require 'bundler/version'
-
 require File.expand_path('lib/createsend/version')
 
 Gem::Specification.new do |s|
@@ -26,6 +23,6 @@ Gem::Specification.new do |s|
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.version = CreateSend::VERSION
   s.platform = Gem::Platform::RUBY
-  s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6') if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = '>= 1.3.6'
   s.licenses = ['MIT']
 end
